@@ -1,8 +1,5 @@
-//Autor: Milena de Nazaré Santos Quaresma
-//Tecnologa em Gestão Ambiental - IFPA
-//Licenciada em Geografia - UFPA
-//Mestra em Ciências Ambientais - UFPA
-//Doutoranda em Geografia - UFPA
+//Script: Curso - Aplicabilidade do sensoriamento remoto para dados de precipitação
+//Ministrantes: Dr. Marcos Santos e Ma. Milena Quaresma
 
 
 /**********************DEFINIÇÃO DO INTERVALO DE TEMPO PARA ANALISE - ANO X E ANO X+1 *********/
@@ -258,7 +255,7 @@ Map.addLayer(precipitation_accum, VisAnual, 'Precipitação Anual CHIRPS'.concat
 /********************************Exportando Imagens Anual***********************/
 Export.image.toDrive({
   image: precipitation_accum,
-  folder: 'CURSO_UECE',
+  folder: 'CURSO_PRECIPTACAO',
   description: 'CHIRPS'.concat(year),
   region: area_estudo,
   scale: 2500,
@@ -284,7 +281,7 @@ var list = precipitacao_mensal_acum.toList(size)
     image:list.get(i), 
     description:'CHIRPS_mes_'+Name, 
     region: area_estudo,
-    folder:'CONSULTORIA', //pasta criada no Google Drive onde serão salvas as imagens
+    folder:'CURSO_PRECIPTACAO', //pasta criada no Google Drive onde serão salvas as imagens
     scale:2500, //
     maxPixels:1e13  //numero máximos de pixel que podem compor uma imagem. 1^13
   })
