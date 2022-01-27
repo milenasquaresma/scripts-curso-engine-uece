@@ -255,7 +255,7 @@ Map.addLayer(precipitation_accum, VisAnual, 'Precipitação Anual CHIRPS'.concat
 /********************************Exportando Imagens Anual***********************/
 Export.image.toDrive({
   image: precipitation_accum,
-  folder: 'CURSO_PRECIPTACAO',
+  folder: 'CURSO_PRECIPITACAO',
   description: 'CHIRPS'.concat(year),
   region: area_estudo,
   scale: 2500,
@@ -281,7 +281,7 @@ var list = precipitacao_mensal_acum.toList(size)
     image:list.get(i), 
     description:'CHIRPS_mes_'+Name, 
     region: area_estudo,
-    folder:'CURSO_PRECIPTACAO', //pasta criada no Google Drive onde serão salvas as imagens
+    folder:'CURSO_PRECIPITACAO', //pasta criada no Google Drive onde serão salvas as imagens
     scale:2500, //
     maxPixels:1e13  //numero máximos de pixel que podem compor uma imagem. 1^13
   })
