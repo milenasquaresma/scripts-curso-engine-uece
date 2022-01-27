@@ -222,7 +222,7 @@ print('Informações da Tabela',rainfallYears)
 /*****************************Exportando a tabela**********************************/
 Export.table.toDrive({
   collection: rainfallYears,
-  folder: 'CURSO_UECE',
+  folder: 'CURSO_PRECIPITACAO',
   description:'Tabela_precipitacao',
   selectors:['year','precipitation'],
   fileNamePrefix: 'Dados_Precipitacao_',
