@@ -20,7 +20,7 @@ var enddate = ee.Date.fromYMD(endyear,12,31);
 
  
 // DEFINIÇÃO DA ÁREA DE ESTUDO 
-var area_estudo = ee.FeatureCollection('projects/augustoquaresma-marajo/assets/municipios_marajo')
+var area_estudo = ee.FeatureCollection('projects/milenasquaresma-marajo/assets/municipios_marajo')
                   
 
 // DEFINIR A BORDA DO LAYER DAS ÁREAS DE ESTUDO
